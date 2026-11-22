@@ -1,0 +1,9 @@
+{
+  "name": "case-closed",
+  "private": true,
+  "scripts": {
+    "setup": "npm i && npm --prefix server i && npm --prefix client i",
+    "dev": "concurrently \"npm --prefix server start\" \"npm --prefix client run dev\""
+  },
+  "devDependencies": { "concurrently": "^8.2.2" }
+}
